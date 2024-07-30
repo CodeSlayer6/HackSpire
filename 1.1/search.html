@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" name="" placeholder="Search...." id="myInput" onkeyup="searchFun()">
+        <table id="myTable">
+
+            <tr class="header">
+                <th style="width: 40%;">Name</th>
+                <th style="width: 30%;">Class</th>
+                <th style="width: 30%;">Department</th>
+            </tr>
+            <tr>
+                <td>Vinod</td>
+                <td>SE</td>
+                <td>MECHANICAL</td>
+            </tr>
+            <tr>
+                <td>Shravani</td>
+                <td>SE</td>
+                <td>MECHANICAL</td>
+            </tr>
+            <tr>
+                <td>Uday</td>
+                <td>TE</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td>Pranjal</td>
+                <td>SE</td>
+                <td>Computer</td>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        const searchFun = () => {
+            let filter = document.getElementById('myInput').value.toUpperCase();
+            let myTable = document.getElementById('myTable');
+            let tr = myTable.getElementsByTagName('tr');
+
+            for (var i = 0; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[0];
+
+                if (td) {
+                    let textvalue = td.textContent || td.innerHTML;
+                    if (textvalue.toLocaleUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
