@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criteria6</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter;
+    }
+
+    body {
+        align-content: center;
+        height: 700px;
+    }
+
+    /* .nav-bar {
+    width: 100%;
+    height: 140px;
+    background-color: #EDF6FF;
+
+    align-content: center;
+}
+
+.logo {
+    background-image: url(logo.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 213.12px;
+    background-color: #fff;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+} */
+    /* .text h4 {
+    font-weight: bold;
+}
+
+.text {
+    font-family: Inter;
+    align-self: center;
+    margin-left: 40px;
+    font-family: Inter;
+} */
+
+    .box {
+        padding: 20px 30px 20px;
+        background-color: #437FC7;
+        width: 180px;
+        margin-left: -220px;
+        margin-top: 60px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 700;
+        color: #ffff;
+
+    }
+
+    button {
+
+        background-color: #437FC7;
+        width: 180px;
+
+        margin-top: 100px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 700;
+        color: #ffff;
+        border: none;
+        font-size: 20px;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #EDF6FF;
+        border: 2px solid #437FC7;
+        color: #437FC7;
+        transition: 0.5s;
+    }
+
+    .title {
+        margin-top: 30px;
+        text-align:left;
+        width: 400px;
+    }
+
+
+
+
+    input {
+        height: 40px;
+        width: 400px;
+        background-color: #EDF6FF;
+        border-radius: 5px;
+        border-bottom: 3px solid #437FC7;
+        font-size:15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    select {
+        height: 40px;
+        width: 400px;
+        background-color: #EDF6FF;
+        border-radius: 5px;
+        border-bottom: 3px solid #437FC7;
+        font-size: large;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+
+
+    #wq {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* box-shadow:1px 1px 25px -10px black; */
+        /* width: 600px; */
+        /* margin-left: 350px; */
+
+    }
+
+    .content {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 400px;
+
+    }
+
+    .content div {
+        margin-top: 20px;
+        
+    }
+
+    .content div label{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    @media only screen and (min-width:360px) and (max-width:1280px){
+        #wq{
+            margin-left:auto;
+
+        }
+        .box{
+            margin-left: 1px;
+        }
+        .title{
+            margin-left: 15px;
+        }
+
+        input{
+            width: 300px;
+        }
+    }
+
+    
+</style>
+
+<body>
+</body>
+<!-- nav bar up to line 23-->
+<!-- <div class="nav-bar">
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class="text">
+                <h4>PSPS's</h4>
+                <h2>Rajendra Mane College of Engineering & Technology</h2>
+                <h3>Ambav, Ratnagiri Maharashtra</h3>
+            </div>
+        </nav>
+    </div> -->
+<form action="#">
+    <div id="wq">
+        <div class="box" id="box1">CRITERIA :06</div>
+        <div class="title">
+            <p style=" font-size: large;font-weight: 600; margin-top: 10px;">6.5.3 Quality assurance initiatives of the institution include: </p><br>
+                1. Regular meeting of Internal Quality Assurance Cell (IQAC);  Feedback collected, analysed and used for improvements <br>
+                2.  Collaborative quality intitiatives with other institution(s) <br>
+                3. Participation in NIRF <br>
+                4..any other quality audit recognized by state, national or international agencies (ISO Certification, NBA)
+                
+                 
+        </div>
+        <div class="content">
+            <div>
+                <label for="Date">Year<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" id="year" name="year"  required>
+            </div>
+            
+            
+            <div>
+                <label for="Name">Confernces, Seminars, Workshops on quality conducted <a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Cname" required>
+            </div>
+            
+            <div>
+                <label for="Name">Academic Administrative Audit (AAA) and initiation of follow up action<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Acad" required>
+            </div>
+            
+            <div>
+                <label for="Name">Participation in NIRF along with Status. <a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Parti" required>
+            </div>
+
+            <div>
+                <label for="Name">ISO Certification. and nature and validity period <a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Certi" required>
+            </div>
+
+            <div>
+                <label for="Name">NBA or any other certification received with program specifications. <a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Acer" required>
+            </div>
+           
+            <div>
+                <label for="Name">Collaborative quality initiatives with other institution(s) (Provide name of the institution and activity) <a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Coll" required>
+            </div>
+           
+            <div>
+                <label for="Date">Orientation programme on quality issues for teachers and students organised by the institution, Date               (From-To) (DD-MM-YYYY)<a style="color: red;">*</a></label>
+                <br>
+                <input type="date" name="DDate">
+              </div>
+
+        </div>
+        <button onclick="alert('Submitted Successfully')">submit</button>
+    </div>
+</form>
+
+</body>
+
+</html>
