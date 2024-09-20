@@ -23,11 +23,12 @@ body {
     background-size: cover;
     border-radius: 50px;
     position: relative;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 213.12px;
-    background-color: #fff;
+    /* background-color: #fff; */
     overflow: hidden;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 nav {
