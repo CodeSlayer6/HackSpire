@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criteria1</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter;
+    }
+
+    body {
+        align-content: center;
+        height: 700px;
+    }
+
+    /* .nav-bar {
+    width: 100%;
+    height: 140px;
+    background-color: #EDF6FF;
+
+    align-content: center;
+}
+
+.logo {
+    background-image: url(logo.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 213.12px;
+    background-color: #fff;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+} */
+    /* .text h4 {
+    font-weight: bold;
+}
+
+.text {
+    font-family: Inter;
+    align-self: center;
+    margin-left: 40px;
+    font-family: Inter;
+} */
+
+    .box {
+        padding: 20px 30px 20px;
+        background-color: #437FC7;
+        width: 180px;
+        margin-left: -220px;
+        margin-top: 60px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 700;
+        color: #ffff;
+
+    }
+
+    button {
+
+        background-color: #437FC7;
+        width: 180px;
+
+        margin-top: 100px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 700;
+        color: #ffff;
+        border: none;
+        font-size: 20px;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #EDF6FF;
+        border: 2px solid #437FC7;
+        color: #437FC7;
+        transition: 0.5s;
+    }
+
+    .title {
+        margin-top: 30px;
+        text-align:left;
+        width: 400px;
+    }
+
+
+
+
+    input {
+        height: 40px;
+        width: 400px;
+        background-color: #EDF6FF;
+        border-radius: 5px;
+        border-bottom: 3px solid #437FC7;
+        font-size:15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+
+
+    #wq {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* box-shadow:1px 1px 25px -10px black; */
+        /* width: 600px; */
+        /* margin-left: 350px; */
+
+    }
+
+    .content {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 400px;
+        
+
+    }
+
+    .content div {
+        margin-top: 20px;
+        
+    }
+
+    .content div label{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    @media only screen and (min-width:360px) and (max-width:1280px){
+        #wq{
+            margin-left:auto
+
+        }
+        .box{
+            margin-left: 1px;
+        }
+        .title{
+            margin-left: 15px;
+        }
+
+        input{
+            width: 300px;
+        }
+    }
+
+    
+</style>
+
+<body>
+</body>
+<!-- nav bar up to line 23-->
+<!-- <div class="nav-bar">
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class="text">
+                <h4>PSPS's</h4>
+                <h2>Rajendra Mane College of Engineering & Technology</h2>
+                <h3>Ambav, Ratnagiri Maharashtra</h3>
+            </div>
+        </nav>
+    </div> -->
+<form action="#">
+    <div id="wq">
+        <div class="box" id="box1">CRITERIA :01</div>
+        <div class="title">
+            <p style=" font-size: large;font-weight: 600; margin-top: 10px;">1.2.2 Number of Add on /Certificate programs offered during the year </p>
+        </div>
+       
+        <div class="content">
+           
+                
+                <label for="Name">Name of Add on /Certificate programs offered<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Acer" required>
+            </div>
+           <br>
+            <div>
+                <label for="Name">Course Code<a style="color: red;">*</a> </label>
+                <br>
+                <input type="text" name="Ccode" required>
+            </div> 
+            <br>
+            <div>
+                <label for="Date">Year of Offering<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" id="year" name="year"  required>
+            </div>
+            <br>
+            <div>
+                <label for="Name">No. of times offered during the same year<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Ntime" required>
+            </div>
+            <br>
+            <div>
+                <label for="Date">Duration of course<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Dcou" required>
+            </div>
+            <br>
+            <div>
+                <label for="Name">Number of students enrolled in the year<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Nstu" required>
+            </div>
+            <br>
+            <div>
+                <label for="Name">Number of Students completing the course  in the year<a style="color: red;">*</a></label>
+                <br>
+                <input type="text" name="Ncom" required>
+            </div>
+            <br>
+            <div>
+                <label for="Name">which year (Year 1)<a style="color: red;">*</a> </label>
+                <br>
+                <input type="text" name="year" required>
+            </div>
+            <button onclick="alert('Submitted Successfully')">submit</button>
+
+        </div>
+        
+</form>
+
+</body>
+
+</html>
